@@ -1,0 +1,59 @@
+Name,Category,Preparation Time,Cooking Time,Preparation Cost,Cooking Cost ,Selling Price
+French Fries,Appetizers & Starters,15 minutes,10 minutes,75,60,175
+Garlic Bread,Appetizers & Starters,10 minutes,10 minutes,50,60,181
+Veg Cutlet,Appetizers & Starters,20 minutes,15 minutes,100,90,271
+Chicken Nuggets,Appetizers & Starters,15 minutes,10 minutes,75,60,274
+Egg Pakora,Appetizers & Starters,10 minutes,10 minutes,50,60,153
+Paneer Tikka,Appetizers & Starters,25 minutes,20 minutes,125,120,380
+Fish Fingers,Appetizers & Starters,20 minutes,15 minutes,100,90,333
+Crispy Mushroom Fry,Appetizers & Starters,15 minutes,12 minutes,75,72,252
+Stuffed Bell Peppers,Appetizers & Starters,30 minutes,25 minutes,150,150,353
+Mozzarella Sticks,Appetizers & Starters,15 minutes,10 minutes,75,60,261
+Spring Rolls,Appetizers & Starters,20 minutes,15 minutes,100,90,266
+Crab Cakes,Appetizers & Starters,25 minutes,20 minutes,125,120,419
+Tandoori Chicken,Appetizers & Starters,30 minutes,20 minutes,150,120,435
+Grilled Pineapple Skewers,Appetizers & Starters,15 minutes,10 minutes,75,60,215
+Veg Manchurian Balls,Appetizers & Starters,20 minutes,15 minutes,100,90,308
+Aloo Gobi,Main Course – Veg,20 minutes,25 minutes,100,150,327
+Baingan Bharta,Main Course – Veg,25 minutes,30 minutes,125,180,388
+Bhindi Masala,Main Course – Veg,20 minutes,25 minutes,100,150,342
+Vegetable Kurma,Main Course – Veg,25 minutes,30 minutes,125,180,402
+Matar Paneer,Main Course – Veg,25 minutes,30 minutes,125,180,415
+Mix Veg Curry,Main Course – Veg,20 minutes,25 minutes,100,150,335
+Tinda Masala,Main Course – Veg,20 minutes,25 minutes,100,150,312
+Veg Kofta Curry,Main Course – Veg,30 minutes,35 minutes,150,210,461
+Kadhi Pakora,Main Course – Veg,25 minutes,30 minutes,125,180,375
+Lauki Chana Dal,Main Course – Veg,25 minutes,30 minutes,125,180,361
+Tawa Veg,Main Course – Veg,20 minutes,25 minutes,100,150,356
+Kadai Vegetable,Main Course – Veg,25 minutes,30 minutes,125,180,407
+Cabbage Thoran,Main Course – Veg,15 minutes,20 minutes,75,120,278
+Jackfruit Curry,Main Course – Veg,30 minutes,35 minutes,150,210,454
+Paneer Butter Masala,Main Course – Punjabi Specialties (Veg),30 minutes,35 minutes,150,210,477
+Palak Paneer,Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,393
+Dal Makhani,Main Course – Punjabi Specialties (Veg),30 minutes,40 minutes,150,240,486
+Rajma Masala,Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,387
+Chana Masala,Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,375
+Kadai Paneer,Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,405
+Shahi Paneer,Main Course – Punjabi Specialties (Veg),30 minutes,35 minutes,150,210,457
+Malai Kofta,Main Course – Punjabi Specialties (Veg),30 minutes,35 minutes,150,210,470
+Stuffed Capsicum Curry,Main Course – Punjabi Specialties (Veg),30 minutes,35 minutes,150,210,460
+Punjabi Dum Aloo,Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,388
+Amritsari Chole,Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,389
+Bharta (Smoked Eggplant),Main Course – Punjabi Specialties (Veg),25 minutes,30 minutes,125,180,357
+Punjabi Kadhi,Main Course – Punjabi Specialties (Veg),20 minutes,25 minutes,100,150,350
+Butter Chicken,Main Course – Non-Veg,30 minutes,35 minutes,150,210,476
+Chicken Korma,Main Course – Non-Veg,30 minutes,35 minutes,150,210,484
+Chicken Tikka Masala,Main Course – Non-Veg,30 minutes,35 minutes,150,210,500
+Chicken Curry,Main Course – Non-Veg,25 minutes,30 minutes,125,180,411
+Chicken Do Pyaza,Main Course – Non-Veg,30 minutes,35 minutes,150,210,466
+Mutton Rogan Josh,Main Course – Non-Veg,35 minutes,40 minutes,175,240,532
+Keema Masala,Main Course – Non-Veg,30 minutes,35 minutes,150,210,513
+Egg Curry,Main Course – Non-Veg,25 minutes,30 minutes,125,180,433
+Fish Curry,Main Course – Non-Veg,25 minutes,30 minutes,125,180,447
+Prawn Masala,Main Course – Non-Veg,30 minutes,35 minutes,150,210,518
+Beef Fry / Curry,Main Course – Non-Veg,30 minutes,35 minutes,150,210,505
+Crab Masala,Main Course – Non-Veg,30 minutes,35 minutes,150,210,395
+Chicken Handi,Main Course – Non-Veg,30 minutes,35 minutes,150,210,511
+Tandoori Chicken Gravy,Main Course – Non-Veg,30 minutes,35 minutes,150,210,413
+Andhra Chicken Curry,Main Course – Non-Veg,25 minutes,30 minutes,125,180,331
+Egg Masala,Main Course – Non-Veg,25 minutes,30 minutes,125,180,408

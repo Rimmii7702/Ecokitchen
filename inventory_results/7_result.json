@@ -1,0 +1,21 @@
+{
+    "image": "7.jpg",
+    "items": [
+        {
+            "ingredient": "Egg",
+            "bounding_box": [
+                315,
+                155,
+                375,
+                202
+            ],
+            "detection_confidence": 0.52,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 5
+        }
+    ],
+    "item_counts": {
+        "Egg": 1
+    },
+    "total_items": 1
+}

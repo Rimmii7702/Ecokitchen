@@ -1,0 +1,57 @@
+Week,Dish Name,Category,Quantity Sold,Unit Price (₹),Total Revenue (₹)
+01-Jan-2025 to 05-Jan-2025,Butter Chicken,Main Course Non-Veg,50,230,11500
+06-Jan-2025 to 12-Jan-2025,Palak Paneer,Punjabi Specialties (Veg),54,210,11340
+06-Jan-2025 to 12-Jan-2025,French Fries,Appetizers & Starters,78,70,5460
+06-Jan-2025 to 12-Jan-2025,Vegetable Biryani,Rice & Biryani,60,180,10800
+06-Jan-2025 to 12-Jan-2025,Tandoori Roti,Breads & Sides,74,30,2220
+06-Jan-2025 to 12-Jan-2025,Fruit Salad,Desserts,58,75,4350
+06-Jan-2025 to 12-Jan-2025,Lassi,Drinks / Beverages,69,85,5865
+13-Jan-2025 to 19-Jan-2025,Mutton Rogan Josh,Main Course Non-Veg,50,245,12250
+20-Jan-2025 to 26-Jan-2025,Kadai Paneer,Punjabi Specialties (Veg),63,215,13545
+20-Jan-2025 to 26-Jan-2025,Mozzarella Sticks,Appetizers & Starters,61,100,6100
+20-Jan-2025 to 26-Jan-2025,Prawn Biryani,Rice & Biryani,55,240,13200
+20-Jan-2025 to 26-Jan-2025,Naan,Breads & Sides,68,35,2380
+20-Jan-2025 to 26-Jan-2025,Chocolate Cake,Desserts,66,90,5940
+20-Jan-2025 to 26-Jan-2025,Mocktails,Drinks / Beverages,75,100,7500
+27-Jan-2025 to 02-Feb-2025,Keema Masala,Main Course Non-Veg,53,255,13515
+03-Feb-2025 to 09-Feb-2025,Amritsari Chole,Punjabi Specialties (Veg),65,200,13000
+03-Feb-2025 to 09-Feb-2025,Stuffed Bell Peppers,Appetizers & Starters,62,95,5890
+03-Feb-2025 to 09-Feb-2025,Coconut Rice,Rice & Biryani,70,120,8400
+03-Feb-2025 to 09-Feb-2025,Garlic Naan,Breads & Sides,78,40,3120
+03-Feb-2025 to 09-Feb-2025,Ice Cream,Desserts,64,80,5120
+03-Feb-2025 to 09-Feb-2025,Mojito,Drinks / Beverages,72,90,6480
+10-Feb-2025 to 16-Feb-2025,Egg Curry,Main Course Non-Veg,56,230,12880
+17-Feb-2025 to 23-Feb-2025,Kadhi Pakora,Punjabi Specialties (Veg),63,185,11655
+17-Feb-2025 to 23-Feb-2025,Veg Manchurian Balls,Appetizers & Starters,68,100,6800
+17-Feb-2025 to 23-Feb-2025,Mushroom Rice,Rice & Biryani,66,125,8250
+17-Feb-2025 to 23-Feb-2025,Stuffed Paratha,Breads & Sides,72,45,3240
+17-Feb-2025 to 23-Feb-2025,Custard,Desserts,60,70,4200
+17-Feb-2025 to 23-Feb-2025,Mocktails,Drinks / Beverages,78,100,7800
+24-Feb-2025 to 02-Mar-2025,Prawn Masala,Main Course Non-Veg,52,260,13520
+03-Mar-2025 to 09-Mar-2025,Jeera Rice,Rice & Biryani,72,110,7920
+03-Mar-2025 to 09-Mar-2025,Veg Cutlet,Appetizers & Starters,64,100,6400
+03-Mar-2025 to 09-Mar-2025,Shahi Paneer,Punjabi Specialties (Veg),61,220,13420
+03-Mar-2025 to 09-Mar-2025,Mojito,Drinks / Beverages,70,90,6300
+03-Mar-2025 to 09-Mar-2025,Pizza (Chicken),Continental / Western,56,240,13440
+03-Mar-2025 to 09-Mar-2025,Egg Pakora,Appetizers & Starters,59,90,5310
+10-Mar-2025 to 16-Mar-2025,Butter Chicken,Main Course Veg,49,160,7840
+17-Mar-2025 to 23-Mar-2025,Omelette,Continental / Western,65,90,5850
+17-Mar-2025 to 23-Mar-2025,Buttermilk,Drinks / Beverages,92,30,2760
+17-Mar-2025 to 23-Mar-2025,Paneer Tikka,Appetizers & Starters,61,150,9150
+17-Mar-2025 to 23-Mar-2025,Amritsari Chole,Punjabi Specialties (Veg),56,170,9520
+17-Mar-2025 to 23-Mar-2025,Coconut Rice,Rice & Biryani,58,120,6960
+24-Mar-2025 to 30-Mar-2025,Tandoori Chicken Gravy,Main Course Veg,55,180,9900
+24-Mar-2025 to 30-Mar-2025,Quesadilla (Chicken),Continental / Western,51,200,10200
+24-Mar-2025 to 30-Mar-2025,Milkshake (Chocolate),Drinks / Beverages,65,90,5850
+24-Mar-2025 to 30-Mar-2025,Veg Kofta Curry,Main Course Non-Veg,61,200,12200
+31-Mar-2025 to 06-Apr-2025,Grilled Pineapple Skewers,Appetizers & Starters,52,130,6760
+31-Mar-2025 to 06-Apr-2025,Sausage Platter,Continental / Western,46,240,11040
+31-Mar-2025 to 06-Apr-2025,Tamarind Rice,Rice & Biryani,63,110,6930
+31-Mar-2025 to 06-Apr-2025,Herbal Tea,Drinks / Beverages,70,50,3500
+31-Mar-2025 to 06-Apr-2025,Naan / Roti / Paratha,Breads & Sides,120,20,2400
+31-Mar-2025 to 06-Apr-2025,Bharta (Smoked Eggplant),Punjabi Specialties (Veg),58,180,10440
+07-Apr-2025 to 13-Apr-2025,Andhra Chicken Curry,Main Course Veg,42,150,6300
+07-Apr-2025 to 13-Apr-2025,Red Sauce Pasta,Continental / Western,55,200,11000
+07-Apr-2025 to 13-Apr-2025,Lemon Rice,Rice & Biryani,68,120,8160
+07-Apr-2025 to 13-Apr-2025,Smoothies,Drinks / Beverages,60,90,5400
+07-Apr-2025 to 13-Apr-2025,Crab Masala,Main Course Veg,44,160,7040

@@ -1,0 +1,1049 @@
+{
+    "date": "2025-06-20",
+    "expiring_ingredients": [
+        {
+            "Name": "Paneer",
+            "Catagory": "Dairy",
+            "Quantity": 25,
+            "Unit": "blocks",
+            "Cost per Unit": 4.8,
+            "Expiry date": "2024-01-08 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 14,
+            "Days until expiry": -529.0
+        },
+        {
+            "Name": "Cheddar Cheese",
+            "Catagory": "Dairy",
+            "Quantity": 26,
+            "Unit": "blocks",
+            "Cost per Unit": 6.5,
+            "Expiry date": "2024-01-20 00:00:00",
+            "Minimum stock level": 13,
+            "No of days after restock.": 14,
+            "Days until expiry": -517.0
+        },
+        {
+            "Name": "Cottage Cheese",
+            "Catagory": "Dairy",
+            "Quantity": 24,
+            "Unit": "tubs",
+            "Cost per Unit": 3.5,
+            "Expiry date": "2024-04-28 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 7,
+            "Days until expiry": -418.0
+        },
+        {
+            "Name": "Salmon",
+            "Catagory": "Non-Veg",
+            "Quantity": 10,
+            "Unit": "pieces",
+            "Cost per Unit": 15.0,
+            "Expiry date": "2024-12-20 00:00:00",
+            "Minimum stock level": 5,
+            "No of days after restock.": 7,
+            "Days until expiry": -182.0
+        },
+        {
+            "Name": "Egg (Turkey)",
+            "Catagory": "Non-Veg",
+            "Quantity": 12,
+            "Unit": "trays",
+            "Cost per Unit": 5.0,
+            "Expiry date": "2024-12-21 00:00:00",
+            "Minimum stock level": 6,
+            "No of days after restock.": 7,
+            "Days until expiry": -181.0
+        },
+        {
+            "Name": "Chicken",
+            "Catagory": "Non-Veg",
+            "Quantity": 25,
+            "Unit": "pieces",
+            "Cost per Unit": 7.0,
+            "Expiry date": "2024-12-22 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 7,
+            "Days until expiry": -180.0
+        },
+        {
+            "Name": "Egg (Goose)",
+            "Catagory": "Non-Veg",
+            "Quantity": 10,
+            "Unit": "trays",
+            "Cost per Unit": 6.0,
+            "Expiry date": "2024-12-23 00:00:00",
+            "Minimum stock level": 5,
+            "No of days after restock.": 7,
+            "Days until expiry": -179.0
+        },
+        {
+            "Name": "Egg (Duck)",
+            "Catagory": "Non-Veg",
+            "Quantity": 18,
+            "Unit": "trays",
+            "Cost per Unit": 4.0,
+            "Expiry date": "2024-12-24 00:00:00",
+            "Minimum stock level": 9,
+            "No of days after restock.": 7,
+            "Days until expiry": -178.0
+        },
+        {
+            "Name": "Cod",
+            "Catagory": "Non-Veg",
+            "Quantity": 12,
+            "Unit": "pieces",
+            "Cost per Unit": 12.0,
+            "Expiry date": "2024-12-25 00:00:00",
+            "Minimum stock level": 6,
+            "No of days after restock.": 7,
+            "Days until expiry": -177.0
+        },
+        {
+            "Name": "Egg (Chicken)",
+            "Catagory": "Non-Veg",
+            "Quantity": 30,
+            "Unit": "trays",
+            "Cost per Unit": 3.0,
+            "Expiry date": "2024-12-26 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 7,
+            "Days until expiry": -176.0
+        },
+        {
+            "Name": "Egg (Quail)",
+            "Catagory": "Non-Veg",
+            "Quantity": 20,
+            "Unit": "trays",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2024-12-27 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 7,
+            "Days until expiry": -175.0
+        },
+        {
+            "Name": "Beef",
+            "Catagory": "Non-Veg",
+            "Quantity": 15,
+            "Unit": "pieces",
+            "Cost per Unit": 18.0,
+            "Expiry date": "2024-12-28 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 7,
+            "Days until expiry": -174.0
+        },
+        {
+            "Name": "Haddock",
+            "Catagory": "Non-Veg",
+            "Quantity": 11,
+            "Unit": "pieces",
+            "Cost per Unit": 13.0,
+            "Expiry date": "2024-12-28 00:00:00",
+            "Minimum stock level": 6,
+            "No of days after restock.": 7,
+            "Days until expiry": -174.0
+        },
+        {
+            "Name": "Steak",
+            "Catagory": "Non-Veg",
+            "Quantity": 8,
+            "Unit": "pieces",
+            "Cost per Unit": 20.0,
+            "Expiry date": "2024-12-29 00:00:00",
+            "Minimum stock level": 4,
+            "No of days after restock.": 7,
+            "Days until expiry": -173.0
+        },
+        {
+            "Name": "Tilapia",
+            "Catagory": "Non-Veg",
+            "Quantity": 14,
+            "Unit": "pieces",
+            "Cost per Unit": 10.0,
+            "Expiry date": "2024-12-30 00:00:00",
+            "Minimum stock level": 7,
+            "No of days after restock.": 7,
+            "Days until expiry": -172.0
+        },
+        {
+            "Name": "Watermelon",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 15,
+            "Unit": "pieces",
+            "Cost per Unit": 3.0,
+            "Expiry date": "2025-01-05 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 14,
+            "Days until expiry": -166.0
+        },
+        {
+            "Name": "Condensed Milk",
+            "Catagory": "Dairy",
+            "Quantity": 30,
+            "Unit": "cans",
+            "Cost per Unit": 2.8,
+            "Expiry date": "2025-01-05 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 14,
+            "Days until expiry": -166.0
+        },
+        {
+            "Name": "Broccoli",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 25,
+            "Unit": "heads",
+            "Cost per Unit": 1.8,
+            "Expiry date": "2025-01-05 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 8,
+            "Days until expiry": -166.0
+        },
+        {
+            "Name": "Crab",
+            "Catagory": "Non-Veg",
+            "Quantity": 10,
+            "Unit": "pieces",
+            "Cost per Unit": 25.0,
+            "Expiry date": "2025-01-05 00:00:00",
+            "Minimum stock level": 5,
+            "No of days after restock.": 14,
+            "Days until expiry": -166.0
+        },
+        {
+            "Name": "Halibut",
+            "Catagory": "Non-Veg",
+            "Quantity": 9,
+            "Unit": "pieces",
+            "Cost per Unit": 16.0,
+            "Expiry date": "2025-01-05 00:00:00",
+            "Minimum stock level": 5,
+            "No of days after restock.": 14,
+            "Days until expiry": -166.0
+        },
+        {
+            "Name": "Kale",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 20,
+            "Unit": "bunches",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-01-08 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 14,
+            "Days until expiry": -163.0
+        },
+        {
+            "Name": "Mackerel",
+            "Catagory": "Non-Veg",
+            "Quantity": 16,
+            "Unit": "pieces",
+            "Cost per Unit": 9.0,
+            "Expiry date": "2025-01-08 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 14,
+            "Days until expiry": -163.0
+        },
+        {
+            "Name": "Tuna",
+            "Catagory": "Non-Veg",
+            "Quantity": 15,
+            "Unit": "cans",
+            "Cost per Unit": 8.0,
+            "Expiry date": "2025-01-10 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 14,
+            "Days until expiry": -161.0
+        },
+        {
+            "Name": "Mushroom",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 30,
+            "Unit": "packs",
+            "Cost per Unit": 2.5,
+            "Expiry date": "2025-01-10 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 3,
+            "Days until expiry": -161.0
+        },
+        {
+            "Name": "Pomegranate",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 20,
+            "Unit": "pieces",
+            "Cost per Unit": 2.5,
+            "Expiry date": "2025-01-10 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 14,
+            "Days until expiry": -161.0
+        },
+        {
+            "Name": "Sardines",
+            "Catagory": "Non-Veg",
+            "Quantity": 18,
+            "Unit": "cans",
+            "Cost per Unit": 5.0,
+            "Expiry date": "2025-01-12 00:00:00",
+            "Minimum stock level": 9,
+            "No of days after restock.": 14,
+            "Days until expiry": -159.0
+        },
+        {
+            "Name": "Sweet Potato",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 40,
+            "Unit": "pieces",
+            "Cost per Unit": 1.0,
+            "Expiry date": "2025-01-12 00:00:00",
+            "Minimum stock level": 20,
+            "No of days after restock.": 14,
+            "Days until expiry": -159.0
+        },
+        {
+            "Name": "Potato",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 60,
+            "Unit": "pieces",
+            "Cost per Unit": 0.7,
+            "Expiry date": "2025-01-15 00:00:00",
+            "Minimum stock level": 30,
+            "No of days after restock.": 7,
+            "Days until expiry": -156.0
+        },
+        {
+            "Name": "Anchovies",
+            "Catagory": "Non-Veg",
+            "Quantity": 20,
+            "Unit": "cans",
+            "Cost per Unit": 4.0,
+            "Expiry date": "2025-01-15 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 14,
+            "Days until expiry": -156.0
+        },
+        {
+            "Name": "Butter",
+            "Catagory": "Oils & Fats",
+            "Quantity": 25,
+            "Unit": "blocks",
+            "Cost per Unit": 4.0,
+            "Expiry date": "2025-01-15 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 14,
+            "Days until expiry": -156.0
+        },
+        {
+            "Name": "Tonic Water",
+            "Catagory": "Beverages",
+            "Quantity": 58,
+            "Unit": "bottles",
+            "Cost per Unit": 1.3,
+            "Expiry date": "2025-01-18 00:00:00",
+            "Minimum stock level": 29,
+            "No of days after restock.": 14,
+            "Days until expiry": -153.0
+        },
+        {
+            "Name": "Green Beans",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 35,
+            "Unit": "packs",
+            "Cost per Unit": 1.8,
+            "Expiry date": "2025-01-18 00:00:00",
+            "Minimum stock level": 18,
+            "No of days after restock.": 5,
+            "Days until expiry": -153.0
+        },
+        {
+            "Name": "Parmesan Cheese",
+            "Catagory": "Dairy",
+            "Quantity": 18,
+            "Unit": "blocks",
+            "Cost per Unit": 7.0,
+            "Expiry date": "2025-01-18 00:00:00",
+            "Minimum stock level": 9,
+            "No of days after restock.": 14,
+            "Days until expiry": -153.0
+        },
+        {
+            "Name": "Pineapple Juice",
+            "Catagory": "Beverages",
+            "Quantity": 35,
+            "Unit": "cartons",
+            "Cost per Unit": 2.8,
+            "Expiry date": "2025-01-20 00:00:00",
+            "Minimum stock level": 18,
+            "No of days after restock.": 14,
+            "Days until expiry": -151.0
+        },
+        {
+            "Name": "Peas",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 30,
+            "Unit": "packs",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-01-20 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 14,
+            "Days until expiry": -151.0
+        },
+        {
+            "Name": "Tallow",
+            "Catagory": "Oils & Fats",
+            "Quantity": 15,
+            "Unit": "blocks",
+            "Cost per Unit": 5.0,
+            "Expiry date": "2025-01-20 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 14,
+            "Days until expiry": -151.0
+        },
+        {
+            "Name": "Pancake (Premix)",
+            "Catagory": "Grains & Pulses",
+            "Quantity": 20,
+            "Unit": "boxes",
+            "Cost per Unit": 4.0,
+            "Expiry date": "2025-02-10 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 21,
+            "Days until expiry": -130.0
+        },
+        {
+            "Name": "Pancake (Premix)",
+            "Catagory": "Beverages",
+            "Quantity": 20,
+            "Unit": "boxes",
+            "Cost per Unit": 4.0,
+            "Expiry date": "2025-02-10 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 21,
+            "Days until expiry": -130.0
+        },
+        {
+            "Name": "Duck Fat",
+            "Catagory": "Oils & Fats",
+            "Quantity": 10,
+            "Unit": "jars",
+            "Cost per Unit": 18.0,
+            "Expiry date": "2025-02-10 00:00:00",
+            "Minimum stock level": 5,
+            "No of days after restock.": 21,
+            "Days until expiry": -130.0
+        },
+        {
+            "Name": "MoguMogu",
+            "Catagory": "Beverages",
+            "Quantity": 40,
+            "Unit": "bottles",
+            "Cost per Unit": 1.5,
+            "Expiry date": "2025-02-15 00:00:00",
+            "Minimum stock level": 20,
+            "No of days after restock.": 28,
+            "Days until expiry": -125.0
+        },
+        {
+            "Name": "Cooking Spray",
+            "Catagory": "Oils & Fats",
+            "Quantity": 30,
+            "Unit": "cans",
+            "Cost per Unit": 3.5,
+            "Expiry date": "2025-02-28 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 30,
+            "Days until expiry": -112.0
+        },
+        {
+            "Name": "Gatorade",
+            "Catagory": "Beverages",
+            "Quantity": 45,
+            "Unit": "bottles",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-02-28 00:00:00",
+            "Minimum stock level": 22,
+            "No of days after restock.": 30,
+            "Days until expiry": -112.0
+        },
+        {
+            "Name": "KoolAid",
+            "Catagory": "Beverages",
+            "Quantity": 50,
+            "Unit": "packets",
+            "Cost per Unit": 0.8,
+            "Expiry date": "2025-03-15 00:00:00",
+            "Minimum stock level": 25,
+            "No of days after restock.": 45,
+            "Days until expiry": -97.0
+        },
+        {
+            "Name": "Cereal",
+            "Catagory": "Grains & Pulses",
+            "Quantity": 30,
+            "Unit": "boxes",
+            "Cost per Unit": 7.0,
+            "Expiry date": "2025-03-31 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 60,
+            "Days until expiry": -81.0
+        },
+        {
+            "Name": "Ghee",
+            "Catagory": "Oils & Fats",
+            "Quantity": 20,
+            "Unit": "jars",
+            "Cost per Unit": 15.0,
+            "Expiry date": "2025-03-31 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 60,
+            "Days until expiry": -81.0
+        },
+        {
+            "Name": "Milk Powder",
+            "Catagory": "Dairy",
+            "Quantity": 20,
+            "Unit": "bags",
+            "Cost per Unit": 10.0,
+            "Expiry date": "2025-03-31 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 60,
+            "Days until expiry": -81.0
+        },
+        {
+            "Name": "Oatmeal",
+            "Catagory": "Grains & Pulses",
+            "Quantity": 40,
+            "Unit": "boxes",
+            "Cost per Unit": 8.0,
+            "Expiry date": "2025-03-31 00:00:00",
+            "Minimum stock level": 20,
+            "No of days after restock.": 60,
+            "Days until expiry": -81.0
+        },
+        {
+            "Name": "Clarified Butter",
+            "Catagory": "Oils & Fats",
+            "Quantity": 22,
+            "Unit": "jars",
+            "Cost per Unit": 16.0,
+            "Expiry date": "2025-03-31 00:00:00",
+            "Minimum stock level": 11,
+            "No of days after restock.": 60,
+            "Days until expiry": -81.0
+        },
+        {
+            "Name": "Multigrain Bread",
+            "Catagory": "Beverages",
+            "Quantity": 15,
+            "Unit": "loaves",
+            "Cost per Unit": 2.5,
+            "Expiry date": "2025-04-14 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 7,
+            "Days until expiry": -67.0
+        },
+        {
+            "Name": "Bread Crumbs",
+            "Catagory": "Beverages",
+            "Quantity": 10,
+            "Unit": "bags",
+            "Cost per Unit": 3.5,
+            "Expiry date": "2025-04-15 00:00:00",
+            "Minimum stock level": 5,
+            "No of days after restock.": 7,
+            "Days until expiry": -66.0
+        },
+        {
+            "Name": "Vanilla Biscuit",
+            "Catagory": "Beverages",
+            "Quantity": 30,
+            "Unit": "packs",
+            "Cost per Unit": 1.5,
+            "Expiry date": "2025-04-15 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 14,
+            "Days until expiry": -66.0
+        },
+        {
+            "Name": "Black Tea",
+            "Catagory": "Beverages",
+            "Quantity": 55,
+            "Unit": "boxes",
+            "Cost per Unit": 3.2,
+            "Expiry date": "2025-04-15 00:00:00",
+            "Minimum stock level": 28,
+            "No of days after restock.": 60,
+            "Days until expiry": -66.0
+        },
+        {
+            "Name": "Milk",
+            "Catagory": "Dairy",
+            "Quantity": 50,
+            "Unit": "cartons",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-04-15 00:00:00",
+            "Minimum stock level": 25,
+            "No of days after restock.": 7,
+            "Days until expiry": -66.0
+        },
+        {
+            "Name": "Sourdough Bread",
+            "Catagory": "Beverages",
+            "Quantity": 20,
+            "Unit": "loaves",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-04-16 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 7,
+            "Days until expiry": -65.0
+        },
+        {
+            "Name": "Orange Juice",
+            "Catagory": "Beverages",
+            "Quantity": 30,
+            "Unit": "cartons",
+            "Cost per Unit": 2.5,
+            "Expiry date": "2025-04-18 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 14,
+            "Days until expiry": -63.0
+        },
+        {
+            "Name": "Rye Bread",
+            "Catagory": "Beverages",
+            "Quantity": 12,
+            "Unit": "loaves",
+            "Cost per Unit": 2.2,
+            "Expiry date": "2025-04-20 00:00:00",
+            "Minimum stock level": 6,
+            "No of days after restock.": 7,
+            "Days until expiry": -61.0
+        },
+        {
+            "Name": "Coconut Water",
+            "Catagory": "Beverages",
+            "Quantity": 42,
+            "Unit": "bottles",
+            "Cost per Unit": 1.8,
+            "Expiry date": "2025-04-20 00:00:00",
+            "Minimum stock level": 21,
+            "No of days after restock.": 28,
+            "Days until expiry": -61.0
+        },
+        {
+            "Name": "Tomato",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 50,
+            "Unit": "pieces",
+            "Cost per Unit": 0.8,
+            "Expiry date": "2025-04-20 00:00:00",
+            "Minimum stock level": 25,
+            "No of days after restock.": 6,
+            "Days until expiry": -61.0
+        },
+        {
+            "Name": "Evaporated Milk",
+            "Catagory": "Dairy",
+            "Quantity": 35,
+            "Unit": "cans",
+            "Cost per Unit": 2.5,
+            "Expiry date": "2025-04-20 00:00:00",
+            "Minimum stock level": 18,
+            "No of days after restock.": 30,
+            "Days until expiry": -61.0
+        },
+        {
+            "Name": "Apple",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 50,
+            "Unit": "pieces",
+            "Cost per Unit": 0.9,
+            "Expiry date": "2025-04-21 00:00:00",
+            "Minimum stock level": 25,
+            "No of days after restock.": 7,
+            "Days until expiry": -60.0
+        },
+        {
+            "Name": "Onion",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 60,
+            "Unit": "pieces",
+            "Cost per Unit": 0.6,
+            "Expiry date": "2025-04-22 00:00:00",
+            "Minimum stock level": 30,
+            "No of days after restock.": 7,
+            "Days until expiry": -59.0
+        },
+        {
+            "Name": "Bell Pepper",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 30,
+            "Unit": "pieces",
+            "Cost per Unit": 1.2,
+            "Expiry date": "2025-04-23 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 8,
+            "Days until expiry": -58.0
+        },
+        {
+            "Name": "Lettuce",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 25,
+            "Unit": "heads",
+            "Cost per Unit": 1.0,
+            "Expiry date": "2025-04-24 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 7,
+            "Days until expiry": -57.0
+        },
+        {
+            "Name": "Mango",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 40,
+            "Unit": "pieces",
+            "Cost per Unit": 1.5,
+            "Expiry date": "2025-04-25 00:00:00",
+            "Minimum stock level": 20,
+            "No of days after restock.": 9,
+            "Days until expiry": -56.0
+        },
+        {
+            "Name": "Garlic",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 40,
+            "Unit": "pieces",
+            "Cost per Unit": 0.5,
+            "Expiry date": "2025-04-25 00:00:00",
+            "Minimum stock level": 20,
+            "No of days after restock.": 5,
+            "Days until expiry": -56.0
+        },
+        {
+            "Name": "Whipped Cream",
+            "Catagory": "Dairy",
+            "Quantity": 22,
+            "Unit": "cans",
+            "Cost per Unit": 3.3,
+            "Expiry date": "2025-04-25 00:00:00",
+            "Minimum stock level": 11,
+            "No of days after restock.": 7,
+            "Days until expiry": -56.0
+        },
+        {
+            "Name": "Greek Yogurt",
+            "Catagory": "Dairy",
+            "Quantity": 30,
+            "Unit": "cups",
+            "Cost per Unit": 1.8,
+            "Expiry date": "2025-04-26 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 7,
+            "Days until expiry": -55.0
+        },
+        {
+            "Name": "Banana",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 60,
+            "Unit": "pieces",
+            "Cost per Unit": 0.6,
+            "Expiry date": "2025-04-26 00:00:00",
+            "Minimum stock level": 30,
+            "No of days after restock.": 7,
+            "Days until expiry": -55.0
+        },
+        {
+            "Name": "Carrot",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 45,
+            "Unit": "pieces",
+            "Cost per Unit": 0.7,
+            "Expiry date": "2025-04-26 00:00:00",
+            "Minimum stock level": 22,
+            "No of days after restock.": 7,
+            "Days until expiry": -55.0
+        },
+        {
+            "Name": "Cucumber",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 35,
+            "Unit": "pieces",
+            "Cost per Unit": 0.9,
+            "Expiry date": "2025-04-27 00:00:00",
+            "Minimum stock level": 18,
+            "No of days after restock.": 7,
+            "Days until expiry": -54.0
+        },
+        {
+            "Name": "Zucchini",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 28,
+            "Unit": "pieces",
+            "Cost per Unit": 1.1,
+            "Expiry date": "2025-04-28 00:00:00",
+            "Minimum stock level": 14,
+            "No of days after restock.": 9,
+            "Days until expiry": -53.0
+        },
+        {
+            "Name": "Pineapple",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 25,
+            "Unit": "pieces",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-04-28 00:00:00",
+            "Minimum stock level": 12,
+            "No of days after restock.": 7,
+            "Days until expiry": -53.0
+        },
+        {
+            "Name": "Eggplant",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 20,
+            "Unit": "pieces",
+            "Cost per Unit": 1.3,
+            "Expiry date": "2025-04-29 00:00:00",
+            "Minimum stock level": 10,
+            "No of days after restock.": 10,
+            "Days until expiry": -52.0
+        },
+        {
+            "Name": "Green Tea",
+            "Catagory": "Beverages",
+            "Quantity": 40,
+            "Unit": "boxes",
+            "Cost per Unit": 3.5,
+            "Expiry date": "2025-04-30 00:00:00",
+            "Minimum stock level": 20,
+            "No of days after restock.": 60,
+            "Days until expiry": -51.0
+        },
+        {
+            "Name": "Spinach",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 30,
+            "Unit": "bunches",
+            "Cost per Unit": 1.5,
+            "Expiry date": "2025-04-30 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 7,
+            "Days until expiry": -51.0
+        },
+        {
+            "Name": "Puff Pastry",
+            "Catagory": "Beverages",
+            "Quantity": 15,
+            "Unit": "sheets",
+            "Cost per Unit": 5.0,
+            "Expiry date": "2025-04-30 00:00:00",
+            "Minimum stock level": 8,
+            "No of days after restock.": 28,
+            "Days until expiry": -51.0
+        },
+        {
+            "Name": "Orange",
+            "Catagory": "Fruits & Vegetables",
+            "Quantity": 55,
+            "Unit": "pieces",
+            "Cost per Unit": 0.8,
+            "Expiry date": "2025-04-30 00:00:00",
+            "Minimum stock level": 28,
+            "No of days after restock.": 8,
+            "Days until expiry": -51.0
+        },
+        {
+            "Name": "Smoothie Mix",
+            "Catagory": "Beverages",
+            "Quantity": 30,
+            "Unit": "packets",
+            "Cost per Unit": 4.5,
+            "Expiry date": "2025-04-30 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 60,
+            "Days until expiry": -51.0
+        },
+        {
+            "Name": "Lassi",
+            "Catagory": "Dairy",
+            "Quantity": 30,
+            "Unit": "cups",
+            "Cost per Unit": 2.0,
+            "Expiry date": "2025-04-30 00:00:00",
+            "Minimum stock level": 15,
+            "No of days after restock.": 7,
+            "Days until expiry": -51.0
+        },
+        {
+            "Name": "Feta Cheese",
+            "Catagory": "Dairy",
+            "Quantity": 22,
+            "Unit": "blocks",
+            "Cost per Unit": 6.0,
+            "Expiry date": "2025-05-12 00:00:00",
+            "Minimum stock level": 11,
+            "No of days after restock.": 14,
+            "Days until expiry": -39.0
+        },
+        {
+            "Name": "Sparkling Water",
+            "Catagory": "Beverages",
+            "Quantity": 60,
+            "Unit": "bottles",
+            "Cost per Unit": 1.2,
+            "Expiry date": "2025-05-15 00:00:00",
+            "Minimum stock level": 30,
+            "No of days after restock.": 14,
+            "Days until expiry": -36.0
+        },
+        {
+            "Name": "White Tea",
+            "Catagory": "Beverages",
+            "Quantity": 38,
+            "Unit": "boxes",
+            "Cost per Unit": 3.8,
+            "Expiry date": "2025-05-15 00:00:00",
+            "Minimum stock level": 19,
+            "No of days after restock.": 60,
+            "Days until expiry": -36.0
+        },
+        {
+            "Name": "Oatmeal Biscuit",
+            "Catagory": "Beverages",
+            "Quantity": 28,
+            "Unit": "packs",
+            "Cost per Unit": 1.6,
+            "Expiry date": "2025-05-18 00:00:00",
+            "Minimum stock level": 14,
+            "No of days after restock.": 14,
+            "Days until expiry": -33.0
+        },
+        {
+            "Name": "Pie Crust",
+            "Catagory": "Beverages",
+            "Quantity": 12,
+            "Unit": "pieces",
+            "Cost per Unit": 4.2,
+            "Expiry date": "2025-06-08 00:00:00",
+            "Minimum stock level": 6,
+            "No of days after restock.": 14,
+            "Days until expiry": -12.0
+        }
+    ],
+    "todays_special": {
+        "menu_item_1": {
+            "name": "Paneer Butter Masala",
+            "ingredients": [
+                "Paneer",
+                "Tomato",
+                "Onion",
+                "Butter",
+                "Ghee",
+                "Garlic",
+                "Ginger",
+                "Bell Pepper",
+                "Whipped Cream",
+                "Cheddar Cheese",
+                "Spices (Turmeric, Red Chili Powder, Garam Masala)",
+                "Water"
+            ],
+            "description": "A rich and creamy North Indian dish featuring paneer in a tomato-based gravy.",
+            "recipe": "1. Dice 250g paneer into cubes. 2. Saut\u00e9 1 chopped onion in 2 tbsp butter and 1 tbsp ghee until golden. 3. Add 1 tbsp ginger-garlic paste and saut\u00e9 for a minute. 4. Add 2 chopped tomatoes and 1 chopped bell pepper, cook until softened. 5. Add spices: 1 tsp turmeric, 1 tsp red chili powder, and 1 tsp garam masala. 6. Add 100g tomato puree and cook for 5 minutes. 7. Add the paneer cubes and simmer for 5-7 minutes. 8. Stir in 50ml whipped cream and 25g grated cheddar cheese. 9. Garnish with a dollop of cream."
+        },
+        "menu_item_2": {
+            "name": "Tandoori Chicken",
+            "ingredients": [
+                "Chicken",
+                "Greek Yogurt",
+                "Garlic",
+                "Ginger",
+                "Lemon Juice",
+                "Spices (Tandoori Masala, Turmeric, Red Chili Powder, Garam Masala)",
+                "Butter",
+                "Onion",
+                "Bell Pepper"
+            ],
+            "description": "Chicken marinated in yogurt and spices, then cooked in a tandoor oven.",
+            "recipe": "1. Marinate 500g chicken pieces in a mixture of 200g Greek yogurt, 1 tbsp ginger-garlic paste, 1 tbsp lemon juice, 2 tbsp tandoori masala, 1 tsp turmeric, 1 tsp red chili powder, 1 tsp garam masala and salt. Marinate for at least 2 hours. 2. Preheat oven to 200\u00b0C. 3. Place chicken on a baking sheet. 4. Bake for 20-25 minutes, or until chicken is cooked through. 5. Grill onion and bell pepper along with chicken. 6. Brush with butter before serving."
+        },
+        "new_dish": {
+            "name": "Salmon & Paneer Kofta Curry with Sweet Potato Mash & Spinach Salad",
+            "ingredients": [
+                "Salmon",
+                "Paneer",
+                "Sweet Potato",
+                "Spinach",
+                "Onion",
+                "Garlic",
+                "Ginger",
+                "Tomato",
+                "Egg (Chicken)",
+                "Bread Crumbs",
+                "Ghee",
+                "Spices (Coriander Powder, Cumin Powder, Turmeric, Garam Masala, Red Chili Powder)",
+                "Greek Yogurt",
+                "Lemon Juice",
+                "Olive oil",
+                "Salt",
+                "Pepper"
+            ],
+            "description": "An innovative dish blending Indian flavors with salmon and paneer kofta, served with a sweet potato mash and a fresh spinach salad.",
+            "recipe": "1.  **Kofta:** Grind 200g salmon (skinless, boneless) with 100g paneer, 1/4 chopped onion, 1 tbsp breadcrumbs, 1 egg, 1/2 tsp ginger-garlic paste, salt, and pepper. Form into small balls. 2. Shallow fry koftas in ghee until golden. 3. **Curry:** Saut\u00e9 1 chopped onion in ghee. Add 1 tsp ginger-garlic paste, 1 chopped tomato, and cook until softened. Add 1 tsp coriander powder, 1/2 tsp cumin powder, 1/4 tsp turmeric, 1/2 tsp garam masala, and a pinch of red chili powder. Add water for consistency and simmer. Add the koftas into the gravy and cook for 5 mins. 4. **Sweet Potato Mash:** Boil 200g sweet potato until soft. Mash with a knob of butter, salt, and pepper. 5. **Spinach Salad:** Toss fresh spinach with a dressing of greek yogurt, lemon juice, salt, pepper and olive oil. 6. Serve kofta curry with sweet potato mash and spinach salad."
+        }
+    },
+    "two_week_menu": {
+        "dish_1": {
+            "name": "Pasta in a Creamy Black Coffee Sauce with Paneer",
+            "ingredients": [
+                "Black Coffee",
+                "Pasta Elbow",
+                "Paneer"
+            ],
+            "description": "A unique twist on pasta, featuring elbow pasta tossed in a creamy sauce infused with black coffee, complemented by the mild flavor of paneer."
+        },
+        "dish_2": {
+            "name": "Spaghetti with Veg Kofta in a Tomato-Based Sauce",
+            "ingredients": [
+                "Pasta Spaghetti",
+                "Veg Kofta Curry (using Koftas)"
+            ],
+            "description": "Classic spaghetti served with a rich tomato-based sauce, featuring the flavorful vegetable kofta balls from your existing menu to bring more taste."
+        },
+        "dish_3": {
+            "name": "Aloo Gobi Pasta",
+            "ingredients": [
+                "Pasta Elbow",
+                "Aloo Gobi"
+            ],
+            "description": "A hearty vegetarian pasta dish that marries the classic Indian flavors of Aloo Gobi (potatoes and cauliflower) with the comfort of pasta. The vegetables are combined with pasta for a filling meal."
+        },
+        "dish_4": {
+            "name": "Spicy Veg Manchurian Pasta",
+            "ingredients": [
+                "Pasta Spaghetti",
+                "Veg Manchurian Balls"
+            ],
+            "description": "A fusion dish where spaghetti is combined with flavorful veg manchurian balls from your existing menu, bringing both savory and spicy taste."
+        },
+        "dish_5": {
+            "name": "Paneer Butter Masala Pasta",
+            "ingredients": [
+                "Pasta Elbow",
+                "Paneer Butter Masala"
+            ],
+            "description": "Elbow pasta is combined with your Paneer Butter Masala dish. The creaminess of the paneer butter masala is a great companion to the pasta."
+        },
+        "dish_6": {
+            "name": "Bhindi Masala and Pasta",
+            "ingredients": [
+                "Pasta Spaghetti",
+                "Bhindi Masala"
+            ],
+            "description": "An fusion dish in which Pasta Spaghetti is combined with Bhindi Masala (Okra) from your existing menu. This creates a combination of flavors and textures."
+        },
+        "dish_7": {
+            "name": "Mix Veg Curry Pasta",
+            "ingredients": [
+                "Pasta Elbow",
+                "Mix Veg Curry"
+            ],
+            "description": "Elbow pasta combined with your existing mix veg curry dishes, creating a meal with diverse flavors and textures."
+        }
+    }
+}

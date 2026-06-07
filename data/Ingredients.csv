@@ -1,0 +1,140 @@
+Name,Catagory,Quantity,Unit,Cost per Unit,Expiry date,Minimum stock level,No of days after restock.
+Bread Crumbs,Beverages,10,bags,3.5,2025-04-15,5,7
+Sourdough Bread,Beverages,20,loaves,2,2025-04-16,10,7
+Multigrain Bread,Beverages,15,loaves,2.5,2025-04-14,8,7
+Rye Bread,Beverages,12,loaves,2.2,2025-04-20,6,7
+White Bread,Beverages,25,loaves,1.8,2025-12-27,12,7
+Vanilla Biscuit,Beverages,30,packs,1.5,2025-04-15,15,14
+Oatmeal Biscuit,Beverages,28,packs,1.6,2025-05-18,14,14
+Butter Biscuit,Beverages,32,packs,1.7,2025-09-20,16,14
+Chocolate Biscuit,Beverages,35,packs,1.8,2025-07-22,18,14
+Digestive Biscuit,Beverages,33,packs,1.75,2025-09-21,17,14
+Pancake (Premix),Beverages,20,boxes,4,2025-02-10,10,21
+Croissant,Beverages,18,pieces,1.2,2025-12-26,9,7
+Muffin,Beverages,22,pieces,1.3,2025-12-25,11,7
+Puff Pastry,Beverages,15,sheets,5,2025-04-30,8,28
+Hot Dog Bun,Beverages,24,packs,2.8,2025-12-24,12,7
+Burger Bun,Beverages,26,packs,3,2025-12-23,13,7
+Pizza Base,Beverages,10,pieces,3.8,2025-09-05,5,14
+Pie Crust,Beverages,12,pieces,4.2,2025-06-08,6,14
+Cake Slice,Beverages,15,slices,2.5,2025-12-22,8,7
+Wine,Beverages,8,bottles,15,2026-12-31,4,30
+Orange Juice,Beverages,30,cartons,2.5,2025-04-18,15,14
+Tea,Beverages,50,boxes,3,2025-09-31,25,60
+Green Tea,Beverages,40,boxes,3.5,2025-04-30,20,60
+Black Coffee,Beverages,25,jars,8,2025-06-30,12,90
+Sparkling Water,Beverages,60,bottles,1.2,2025-05-15,30,14
+Gatorade,Beverages,45,bottles,2,2025-02-28,22,30
+Pineapple Juice,Beverages,35,cartons,2.8,2025-01-20,18,14
+KoolAid,Beverages,50,packets,0.8,2025-03-15,25,45
+MoguMogu,Beverages,40,bottles,1.5,2025-02-15,20,28
+Black Tea,Beverages,55,boxes,3.2,2025-04-15,28,60
+White Tea,Beverages,38,boxes,3.8,2025-05-15,19,60
+Coconut Water,Beverages,42,bottles,1.8,2025-04-20,21,28
+Tonic Water,Beverages,58,bottles,1.3,2025-01-18,29,14
+Smoothie Mix,Beverages,30,packets,4.5,2025-04-30,15,60
+Coffee,Beverages,30,jars,9,2025-07-31,15,90
+Milk,Dairy,50,cartons,2,2025-04-15,25,7
+Cheese,Dairy,20,blocks,5,2025-09-10,10,14
+Yogurt,Dairy,40,cups,1.5,2025-12-25,20,7
+Cream,Dairy,15,cartons,3,2025-12-22,8,7
+Sour Cream,Dairy,18,tubs,2.8,2025-12-24,9,7
+Feta Cheese,Dairy,22,blocks,6,2025-05-12,11,14
+Mozzarella Cheese,Dairy,25,blocks,5.5,2025-09-15,12,14
+Ricotta Cheese,Dairy,20,tubs,4.5,2025-08-11,10,14
+Parmesan Cheese,Dairy,18,blocks,7,2025-01-18,9,14
+Cottage Cheese,Dairy,24,tubs,3.5,2024-04-28,12,7
+Cheddar Cheese,Dairy,26,blocks,6.5,2024-01-20,13,14
+Greek Yogurt,Dairy,30,cups,1.8,2025-04-26,15,7
+Evaporated Milk,Dairy,35,cans,2.5,2025-04-20,18,30
+Whipped Cream,Dairy,20,cans,3.2,2025-12-23,10,7
+Heavy Cream,Dairy,15,cartons,3.5,2025-12-21,8,7
+Buttermilk,Dairy,25,cartons,2.2,2025-12-27,12,7
+Condensed Milk,Dairy,30,cans,2.8,2025-01-05,15,14
+Chocolate Milk,Dairy,40,cartons,2.3,2025-09-29,20,7
+Milk Powder,Dairy,20,bags,10,2025-03-31,10,60
+Lassi,Dairy,30,cups,2,2025-04-30,15,7
+Paneer,Dairy,25,blocks,4.8,2024-01-08,12,14
+Whipped Cream,Dairy,22,cans,3.3,2025-04-25,11,7
+Tomato,Fruits & Vegetables,50,pieces,0.8,2025-04-20,25,6
+Onion,Fruits & Vegetables,60,pieces,0.6,2025-04-22,30,7
+Garlic,Fruits & Vegetables,40,pieces,0.5,2025-04-25,20,5
+Bell Pepper,Fruits & Vegetables,30,pieces,1.2,2025-04-23,15,8
+Lettuce,Fruits & Vegetables,25,heads,1,2025-04-24,12,7
+Carrot,Fruits & Vegetables,45,pieces,0.7,2025-04-26,22,7
+Cucumber,Fruits & Vegetables,35,pieces,0.9,2025-04-27,18,7
+Zucchini,Fruits & Vegetables,28,pieces,1.1,2025-04-28,14,9
+Eggplant,Fruits & Vegetables,20,pieces,1.3,2025-04-29,10,10
+Spinach,Fruits & Vegetables,30,bunches,1.5,2025-04-30,15,7
+Broccoli,Fruits & Vegetables,25,heads,1.8,2025-01-05,12,8
+Kale,Fruits & Vegetables,20,bunches,2,2025-01-08,10,14
+Mushroom,Fruits & Vegetables,30,packs,2.5,2025-01-10,15,3
+Sweet Potato,Fruits & Vegetables,40,pieces,1,2025-01-12,20,14
+Potato,Fruits & Vegetables,60,pieces,0.7,2025-01-15,30,7
+Green Beans,Fruits & Vegetables,35,packs,1.8,2025-01-18,18,5
+Peas,Fruits & Vegetables,30,packs,2,2025-01-20,15,14
+Apple,Fruits & Vegetables,50,pieces,0.9,2025-04-21,25,7
+Mango,Fruits & Vegetables,40,pieces,1.5,2025-04-25,20,9
+Banana,Fruits & Vegetables,60,pieces,0.6,2025-04-26,30,7
+Pineapple,Fruits & Vegetables,25,pieces,2,2025-04-28,12,7
+Orange,Fruits & Vegetables,55,pieces,0.8,2025-04-30,28,8
+Watermelon,Fruits & Vegetables,15,pieces,3,2025-01-05,8,14
+Pomegranate,Fruits & Vegetables,20,pieces,2.5,2025-01-10,10,14
+Jasmine Rice,Grains & Pulses,20,bags,15,2025-12-31,10,90
+Basmati Rice,Grains & Pulses,18,bags,18,2025-12-31,9,90
+Arborio Rice,Grains & Pulses,15,bags,20,2025-12-31,8,90
+Brown Rice,Grains & Pulses,22,bags,16,2025-12-31,11,90
+Sushi Rice,Grains & Pulses,10,bags,25,2025-12-31,5,90
+White Rice,Grains & Pulses,30,bags,12,2025-12-31,15,90
+Wild Rice,Grains & Pulses,8,bags,30,2025-12-31,4,90
+Long Grain Rice,Grains & Pulses,25,bags,14,2025-12-31,12,90
+Short Grain Rice,Grains & Pulses,20,bags,16,2025-12-31,10,90
+Almond Flour,Grains & Pulses,12,bags,22,2025-12-31,6,90
+Bread Flour,Grains & Pulses,35,bags,10,2025-12-31,18,90
+Whole Wheat Flour,Grains & Pulses,30,bags,11,2025-12-31,15,90
+Rice Flour,Grains & Pulses,28,bags,10.5,2025-12-31,14,90
+Oatmeal,Grains & Pulses,40,boxes,8,2025-03-31,20,60
+Pasta Elbow,Grains & Pulses,25,packs,5,2025-06-30,12,90
+Pasta Spaghetti,Grains & Pulses,22,packs,6,2025-06-30,11,90
+All-Purpose Flour,Grains & Pulses,38,bags,9,2025-12-31,19,90
+Cereal,Grains & Pulses,30,boxes,7,2025-03-31,15,60
+Pancake (Premix),Grains & Pulses,20,boxes,4,2025-02-10,10,21
+Moong Dal,Grains & Pulses,28,bags,13,2025-12-31,14,90
+Chana Dal,Grains & Pulses,32,bags,12.5,2025-12-31,16,90
+Masoor Dal,Grains & Pulses,25,bags,14,2025-12-31,12,90
+Toor Dal,Grains & Pulses,20,bags,15,2025-12-31,10,90
+Kabuli Chana,Grains & Pulses,18,bags,16,2025-12-31,9,90
+Olive Oil,Oils & Fats,20,bottles,12,2026-12-31,10,365
+Vegetable Oil,Oils & Fats,30,bottles,8,2026-12-31,15,365
+Canola Oil,Oils & Fats,25,bottles,9,2026-12-31,12,365
+Sunflower Oil,Oils & Fats,28,bottles,7.5,2026-12-31,14,365
+Avocado Oil,Oils & Fats,15,bottles,18,2026-12-31,8,365
+Peanut Oil,Oils & Fats,35,bottles,6,2026-12-31,18,365
+Coconut Oil,Oils & Fats,22,bottles,10,2026-12-31,11,365
+Corn Oil,Oils & Fats,32,bottles,7,2026-12-31,16,365
+Palm Oil,Oils & Fats,20,bottles,6.5,2026-12-31,10,365
+Sesame Oil,Oils & Fats,18,bottles,11,2026-12-31,9,365
+Butter,Oils & Fats,25,blocks,4,2025-01-15,12,14
+Ghee,Oils & Fats,20,jars,15,2025-03-31,10,60
+Cooking Spray,Oils & Fats,30,cans,3.5,2025-02-28,15,30
+Clarified Butter,Oils & Fats,22,jars,16,2025-03-31,11,60
+Tallow,Oils & Fats,15,blocks,5,2025-01-20,8,14
+Duck Fat,Oils & Fats,10,jars,18,2025-02-10,5,21
+Salmon,Non-Veg,10,pieces,15,2024-12-20,5,7
+Tuna,Non-Veg,15,cans,8,2025-01-10,8,14
+Cod,Non-Veg,12,pieces,12,2024-12-25,6,7
+Sardines,Non-Veg,18,cans,5,2025-01-12,9,14
+Tilapia,Non-Veg,14,pieces,10,2024-12-30,7,7
+Haddock,Non-Veg,11,pieces,13,2024-12-28,6,7
+Mackerel,Non-Veg,16,pieces,9,2025-01-08,8,14
+Halibut,Non-Veg,9,pieces,16,2025-01-05,5,14
+Anchovies,Non-Veg,20,cans,4,2025-01-15,10,14
+Chicken,Non-Veg,25,pieces,7,2024-12-22,12,7
+Egg (Chicken),Non-Veg,30,trays,3,2024-12-26,15,7
+Egg (Duck),Non-Veg,18,trays,4,2024-12-24,9,7
+Egg (Turkey),Non-Veg,12,trays,5,2024-12-21,6,7
+Egg (Goose),Non-Veg,10,trays,6,2024-12-23,5,7
+Egg (Quail),Non-Veg,20,trays,2,2024-12-27,10,7
+Steak,Non-Veg,8,pieces,20,2024-12-29,4,7
+Beef,Non-Veg,15,pieces,18,2024-12-28,8,7
+Crab,Non-Veg,10,pieces,25,2025-01-05,5,14

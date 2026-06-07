@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Inventory Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_4.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <button class="back-btn" onclick="history.back()">← Back</button>
+        <div class="header">
+            <h1><i class="fas fa-recycle"></i> Food Waste Analyzer</h1>
+            <p>Upload images of food waste for AI-powered analysis and categorization</p>
+        </div>
+
+        <form id="uploadForm" action="{{ url_for('waste') }}" method="POST" enctype="multipart/form-data">
+            <div class="upload-container">
+                <div class="upload-area" id="dropArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Upload Food Waste Image</h3>
+                    <p>Drag & drop your image here or click to browse</p>
+                    <input type="file" id="fileInput" name="image" accept="image/*">
+                    <div class="preview-container">
+                        <img id="previewImage" class="preview-image" src="#" alt="Preview">
+                    </div>
+                </div>
+                <button type="submit" class="upload-btn" id="uploadBtn">Analyze Waste</button>
+            </div>
+        </form>
+
+        <div class="loading-spinner" id="loadingSpinner">
+            <i class="fas fa-circle-notch"></i>
+            <p>Analyzing your image...</p>
+        </div>
+
+        {% if result is defined and result %}
+        <div class="results-container" id="resultsContainer">
+
+
+            <div class="results-grid">
+                <div class="image-container">
+                    <span class="image-label">Original Image</span>
+                    <img id="originalImage"
+                        src="{{ url_for('static', filename=upload_path.replace('static/', '')) if upload_path is defined else '#' }}"
+                        alt="Original Image">
+                </div>
+                <div class="image-container">
+                    <span class="image-label">Detected Waste</span>
+                    <img id="yoloImage"
+                        src="{{ url_for('static', filename=yolo_image.replace('static/', '')) if yolo_image is defined else '#' }}"
+                        alt="Detected Waste">
+                </div>
+            </div>
+
+            <div class="analysis-container">
+                <div class="analysis-header">
+                    <h2 class="analysis-title">Analysis Results</h2>
+                    <div class="waste-level {{ level|lower if level is defined else 'low' }}" id="wasteLevel">
+                        {{ level if level is defined else 'Low' }} Waste
+                    </div>
+                </div>
+
+                <div class="analysis-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Category:</div>
+                        <div class="detail-value" id="wasteCategory">{{ result.category if result is defined else 'N/A'
+                            }}
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Approx. Weight:</div>
+                        <div class="detail-value" id="approxWeight">{{ result.approximate_weight if result is defined
+                            and
+                            result.approximate_weight else '0' }} grams</div>
+                    </div>
+                </div>
+
+                <!-- Food Items Table -->
+                <div class="food-items-table-container">
+                    <h3 class="table-title">Food Items Detected</h3>
+                    <table class="food-items-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                            </tr>
+                        </thead>
+                        <tbody id="foodItemsTable">
+                            {% if result is defined and result.food_items %}
+                            {% if result.food_items is string %}
+                            <tr>
+                                <td colspan="3">{{ result.food_items }}</td>
+                            </tr>
+                            {% else %}
+                            {% for item in result.food_items %}
+                            <tr>
+                                <td>{{ item }}</td>
+                            </tr>
+                            {% endfor %}
+                            {% endif %}
+                            {% else %}
+                            <tr>
+                                <td colspan="3">No food items detected</td>
+                            </tr>
+                            {% endif %}
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="detail-item notes-item">
+                    <div class="detail-label">Notes:</div>
+                    <div class="detail-value" id="wasteNotes">{{ result.notes if result is defined and result.notes else
+                        'No
+                        additional notes' }}</div>
+                </div>
+
+                <div class="status-indicator">
+                    <div class="status-dot" id="statusDot"></div>
+                    <div id="statusText">Waste Level: {{ level if level is defined else 'Low' }}</div>
+                </div>
+            </div>
+
+            <button class="new-analysis-btn" id="newAnalysisBtn">Analyze New Image</button>
+        </div>
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='js/main_4.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management Dashboard</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa; /* Light BG */
+            color: #2d3436; /* Dark */
+            min-height: 100vh;
+            padding: 80px 20px 20px; /* Adjusted for fixed navbar */
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3436;
+        }
+
+        .navbar-menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar-menu .btn {
+            padding: 8px 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .dashboard-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .dashboard-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2d3436;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2d3436;
+        }
+
+        .small-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .small-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+
+        .small-card p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ff6b6b;
+        }
+
+        /* Grid Layout */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns for Sales Overview and Inventory Status */
+            gap: 20px;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns for Expiring Soon Inventory and Waste Analysis */
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6b6b; /* Primary */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 400;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #e55a5a; /* Darker red for hover */
+        }
+
+        /* Chart Containers */
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        /* Inventory List */
+        .inventory-list {
+            list-style: none;
+        }
+
+        .inventory-list li {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .dashboard-header h1 {
+                font-size: 2rem;
+            }
+
+            .card h3 {
+                font-size: 1.2rem;
+            }
+
+            .dashboard-container {
+                padding: 10px;
+            }
+
+            .chart-container {
+                height: 250px;
+            }
+
+            .btn {
+                padding: 8px 16px;
+            }
+
+            .navbar-menu {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .navbar-menu .btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .small-card h4 {
+                font-size: 1rem;
+            }
+
+            .small-card p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 15px;
+            }
+
+            .navbar-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navbar-menu {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar-container">
+      <div class="navbar-brand">Echo Kitchen</div>
+      <div class="navbar-menu">
+          <!-- <a class="btn" href="{{ url_for('index') }}">Dashboard</a> -->
+          <a class="btn" href="{{ url_for('waste') }}">Waste</a>
+          <a class="btn" href="{{ url_for('inverntory') }}">Inverntory Track</a>
+          <a class="btn" href="{{ url_for('kitchen_heatmap') }}">Kitchen Waste</a>
+          <a class="btn" href="{{ url_for('live_spoilage_status') }}">spoilage status</a>
+          <a class="btn" href="{{ url_for('recipe') }}">Recipe</a>
+          <a class="btn" href="{{ url_for('today_special') }}">Menu</a>
+          <!-- <a class="btn" href="{{ url_for('index') }}">Logout</a> -->
+      </div>
+  </div>
+  
+
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Echo Kitchen Dashboard</h1>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-grid">
+            <div class="small-card">
+                <h4>Total Items</h4>
+                <p id="totalItems">4</p>
+            </div>
+            <div class="small-card">
+                <h4>Soon to be Expired</h4>
+                <p id="soonToExpire">2</p>
+            </div>
+            <div class="small-card">
+                <h4>Fresh Items</h4>
+                <p id="freshItems">2</p>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Sales Overview -->
+            <div class="card">
+                <h3>Sales Overview</h3>
+                <div class="chart-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <button class="btn" onclick="updateSalesData()">Refresh Data</button>
+            </div>
+
+            <!-- Inventory Status -->
+            <div class="card">
+                <h3>Inventory Status</h3>
+                <ul class="inventory-list" id="inventoryList">
+                    <li>Tomatoes <span>50 units</span></li>
+                    <li>Cheese <span>20 lbs</span></li>
+                    <li>Flour <span>100 lbs</span></li>
+                    <li>Chicken <span>66 units</span></li>
+                </ul>
+                <button class="btn" onclick="updateInventory()">Update Inventory</button>
+            </div>
+        </div>
+
+        <!-- Analysis Section -->
+        <div class="analysis-grid">
+            <!-- Expiring Soon Inventory (Horizontal Bar) -->
+            <div class="card">
+                <h3>Expiring Soon Inventory</h3>
+                <div class="chart-container">
+                    <canvas id="expiringInventoryChart"></canvas>
+                </div>
+                <button class="btn" onclick="updateExpiringInventory()">Refresh Expiring Inventory</button>
+            </div>
+
+            <!-- Waste Analysis (Pie Chart) -->
+            <div class="card">
+                <h3>Waste Analysis</h3>
+                <div class="chart-container">
+                    <canvas id="wasteChart"></canvas>
+                </div>
+                <button class="btn" onclick="updateWasteData()">Refresh Waste Data</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sales Chart Initialization
+        const salesChartCtx = document.getElementById('salesChart').getContext('2d');
+        const salesChart = new Chart(salesChartCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Sales ($)',
+                    data: [1200, 1900, 3000, 2500, 4000, 3500],
+                    borderColor: '#ff6b6b',
+                    backgroundColor: 'rgba(255, 107, 107, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Expiring Inventory Chart Initialization (Horizontal Bar)
+        const expiringInventoryCtx = document.getElementById('expiringInventoryChart').getContext('2d');
+        const expiringInventoryChart = new Chart(expiringInventoryCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Tomatoes', 'Cheese', 'Flour', 'Chicken'],
+                datasets: [{
+                    label: 'Days to Expire',
+                    data: [5, 3, 10, 2],
+                    backgroundColor: '#ff6b6b',
+                    borderColor: '#ff6b6b',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Horizontal bar
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Days' }
+                    }
+                }
+            }
+        });
+
+        // Waste Analysis Pie Chart
+        const wasteChartCtx = document.getElementById('wasteChart').getContext('2d');
+        const wasteChart = new Chart(wasteChartCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Food Waste', 'Packaging Waste', 'Other'],
+                datasets: [{
+                    data: [30, 20, 10],
+                    backgroundColor: ['#ff6b6b', '#4ecdc4', '#2d3436']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Update Sales Data
+        function updateSalesData() {
+            const newData = Array.from({length: 6}, () => Math.floor(Math.random() * 5000));
+            salesChart.data.datasets[0].data = newData;
+            salesChart.update();
+            alert('Sales data refreshed!');
+        }
+
+        // Update Expiring Inventory
+        function updateExpiringInventory() {
+            const newData = Array.from({length: 4}, () => Math.floor(Math.random() * 15) + 1);
+            expiringInventoryChart.data.datasets[0].data = newData;
+            updateSummaryStats();
+            expiringInventoryChart.update();
+            alert('Expiring inventory refreshed!');
+        }
+
+        // Update Waste Data
+        function updateWasteData() {
+            const newData = Array.from({length: 3}, () => Math.floor(Math.random() * 50));
+            wasteChart.data.datasets[0].data = newData;
+            wasteChart.update();
+            alert('Waste data refreshed!');
+        }
+
+        // Update Inventory
+        function updateInventory() {
+            const inventoryList = document.getElementById('inventoryList');
+            const items = ['Tomatoes', 'Cheese', 'Flour', 'Chicken', 'Beef'];
+            const newItem = document.createElement('li');
+            const randomItem = items[Math.floor(Math.random() * items.length)];
+            const quantity = Math.floor(Math.random() * 100);
+            newItem.innerHTML = `${randomItem} <span>${quantity} units</span>`;
+            inventoryList.appendChild(newItem);
+            updateSummaryStats();
+        }
+
+        // Update Summary Statistics
+        function updateSummaryStats() {
+            const inventoryList = document.getElementById('inventoryList');
+            const items = Array.from(inventoryList.getElementsByTagName('li'));
+            document.getElementById('totalItems').textContent = items.length;
+
+            const expiringData = expiringInventoryChart.data.datasets[0].data;
+            const soonToExpireCount = expiringData.filter(days => days <= 5).length;
+            document.getElementById('soonToExpire').textContent = soonToExpireCount;
+
+            const freshCount = items.length - soonToExpireCount;
+            document.getElementById('freshItems').textContent = freshCount > 0 ? freshCount : 0;
+        }
+
+        // Initial Summary Update
+        window.onload = updateSummaryStats;
+    </script>
+</body>
+</html>

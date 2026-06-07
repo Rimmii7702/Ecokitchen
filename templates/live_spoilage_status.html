@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Spoilage Status</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_1.css') }}">
+    <style>
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-height: 50vh;
+            overflow-y: hidden;
+        }
+        .item-card {
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .item-name {
+            font-weight: 600;
+            color: #2d3436;
+            display: block;
+        }
+        .item-status {
+            color: #2d3436;
+            display: block;
+        }
+        .item-detail {
+            color: #636e72;
+            font-size: 0.9em;
+            display: block;
+        }
+        /* Custom styles for different actions */
+        .discard-now {
+            border-left: 5px solid #ff4d4d; /* Red */
+            background-color: #ffebee;
+        }
+        .use-soon {
+            border-left: 5px solid #ff9800; /* Orange */
+            background-color: #fff3e0;
+        }
+        .safe-to-use {
+            border-left: 5px solid #4caf50; /* Green */
+            background-color: #e8f5e9;
+        }
+        /* Image styles */
+        .uploaded-image {
+            max-width: 100%;
+            max-height: 300px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none; /* Hidden initially */
+        }
+        @media (max-width: 600px) {
+            .item-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <button class="back-btn" onclick="history.back()">← Back</button>
+            <img src="https://cdn-icons-png.flaticon.com/512/5026/5026146.png" alt="Smart Inventory Logo" width="40" class="logo">
+
+            <h1>Live Spoilage Status</h1>
+            <p>Upload an image to check the spoilage status in real-time.</p>
+            <form id="upload-form" enctype="multipart/form-data" method="POST" action="{{ url_for('live_spoilage_status') }}">
+                <div class="file-input-wrapper">
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <label for="image" class="btn">Choose Image</label>
+                </div>
+                <button type="submit" class="btn">Analyze Spoilage</button>
+                <div id="loading" class="loading hidden">Processing...</div>
+                <div id="error" class="error hidden"></div>
+            </form>
+            <img src="" alt="Uploaded Image" class="uploaded-image" id="uploadedImage" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+
+            <div id="analysis-results" class="result-section" style="display: {% if not analysis %}none{% endif %};">
+                <h2>Analysis Results</h2>
+                <div class="item-grid" id="item-grid">
+                    {% if analysis %}
+                        {% for item in analysis %}
+                            <div class="item-card {% if item.action == 'Discard now' %}discard-now{% elif item.action == 'Use soon' %}use-soon{% elif item.action == 'Safe to use' %}safe-to-use{% endif %}">
+                                <span class="item-name">{{ item.item }}</span>
+                                <span class="item-status">{{ item.status }}</span>
+                                <span class="item-detail">Confidence: {{ item.confidence }}%</span>
+                                <span class="item-detail">Action: {{ item.action }}</span>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <a href="{{ url_for('inverntory') }}" class="btn" style="display: {% if not analysis %}none{% endif %};">Back to Scanner</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('loading').classList.remove('hidden');
+            document.getElementById('error').classList.add('hidden');
+            const formData = new FormData(document.getElementById('upload-form'));
+            fetch('{{ url_for("live_spoilage_status") }}', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading').classList.add('hidden');
+                if (data.error) {
+                    document.getElementById('error').textContent = data.error;
+                    document.getElementById('error').classList.remove('hidden');
+                } else {
+                    // Update the page with new analysis data and image
+                    const itemGrid = document.getElementById('item-grid');
+                    itemGrid.innerHTML = ''; // Clear existing items
+                    data.analysis.forEach(item => {
+                        const itemCard = document.createElement('div');
+                        itemCard.className = 'item-card';
+                        if (item.action === 'Discard now') {
+                            itemCard.classList.add('discard-now');
+                        } else if (item.action === 'Use soon') {
+                            itemCard.classList.add('use-soon');
+                        } else if (item.action === 'Safe to use') {
+                            itemCard.classList.add('safe-to-use');
+                        }
+                        itemCard.innerHTML = `
+                            <span class="item-name">${item.item}</span>
+                            <span class="item-status">${item.status}</span>
+                            <span class="item-detail">Confidence: ${item.confidence}%</span>
+                            <span class="item-detail">Action: ${item.action}</span>
+                        `;
+                        itemGrid.appendChild(itemCard);
+                    });
+                    // Update uploaded image
+                    const imgElement = document.getElementById('uploadedImage');
+                    if (data.uploaded_image) {
+                        imgElement.src = `{{ url_for('uploads', filename='') }}${data.uploaded_image}`;
+                        imgElement.style.display = 'block';
+                        imgElement.nextElementSibling.style.display = 'none';
+                    } else {
+                        imgElement.style.display = 'none';
+                        imgElement.nextElementSibling.style.display = 'none';
+                    }
+                    document.getElementById('analysis-results').style.display = 'block';
+                    document.querySelector('#analysis-results .btn').style.display = 'inline-block';
+                }
+            })
+            .catch(error => {
+                document.getElementById('loading').classList.add('hidden');
+                document.getElementById('error').textContent = 'An error occurred: ' + error;
+                document.getElementById('error').classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

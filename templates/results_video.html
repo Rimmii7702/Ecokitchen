@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Inventory Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_1.css') }}">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <button class="back-btn" onclick="history.back()">← Back</button>
+            <img src="https://cdn-icons-png.flaticon.com/512/2676/2676046.png" alt="Smart Inventory Logo" class="logo" style="width: 60px; margin-bottom: 15px;">
+            <h1>Video Inventory Results</h1>
+            {% if error %}
+                <div class="error">{{ error }}</div>
+            {% else %}
+                <div class="video-container">
+                    {% if result.video_url %}
+                        <video controls autoplay>
+                            <source src="{{ result.video_url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    {% else %}
+                        <div class="error">Video file not found or unavailable.</div>
+                    {% endif %}
+                </div>
+                <div class="summary-card">
+                    <h3>Summary</h3>
+                    <p><strong>Total Added Items:</strong> {{ result.total_added_items }}</p>
+                    <p><strong>All Items Detected:</strong> {{ result.all_items|join(', ') or 'None' }}</p>
+                </div>
+                <div class="changes-card">
+                    <h3>Inventory Changes (5s Intervals)</h3>
+                    {% if result.change_log and result.change_log|length > 0 %}
+                        <ul>
+                            {% for change in result.change_log %}
+                                <li>
+                                    <strong>{{ change.timestamp }}</strong><br>
+                                    Added: {{ change.added|join(', ') or 'None' }}<br>
+                                    Removed: {{ change.removed|join(', ') or 'None' }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No changes detected.</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+            <a href="{{ url_for('inverntory') }}" class="btn">Scan Another Video</a>
+        </div>
+    </div>
+</body>
+</html>

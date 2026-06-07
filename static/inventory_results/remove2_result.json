@@ -1,0 +1,41 @@
+{
+    "video": "remove2.mp4",
+    "change_log": [
+        {
+            "time_key": 0,
+            "timestamp": "0:00 - 4:59",
+            "added": [
+                "bottle",
+                "cake",
+                "orange",
+                "person",
+                "refrigerator"
+            ],
+            "removed": [
+                "bottle",
+                "cake",
+                "orange",
+                "person",
+                "refrigerator"
+            ]
+        },
+        {
+            "time_key": 5,
+            "timestamp": "5:00 - 9:59",
+            "added": [
+                "person"
+            ],
+            "removed": [
+                "person"
+            ]
+        }
+    ],
+    "total_added_items": 5,
+    "all_items": [
+        "orange",
+        "person",
+        "refrigerator",
+        "cake",
+        "bottle"
+    ]
+}

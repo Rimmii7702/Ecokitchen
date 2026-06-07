@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Inventory Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<div class="container">
+    <button class="back-btn" onclick="history.back()">← Back</button>
+    <div class="header">
+        <h1><i class="fas fa-fire"></i> Kitchen Waste Heatmap</h1>
+        <p>Upload a kitchen image to generate a waste distribution heatmap</p>
+    </div>
+
+    <form id="heatmapUploadForm" action="{{ url_for('kitchen_heatmap') }}" method="POST" enctype="multipart/form-data">
+        <div class="upload-container">
+            <div class="upload-area" id="heatmapDropArea">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Upload Kitchen Image</h3>
+                <p>Drag & drop your image here or click to browse</p>
+                <input type="file" id="heatmapFileInput" name="image" accept="image/*">
+                <div class="preview-container">
+                    <img id="heatmapPreviewImage" class="preview-image" src="#" alt="Preview">
+                </div>
+            </div>
+            <button type="submit" class="upload-btn" id="heatmapUploadBtn">Generate Heatmap</button>
+        </div>
+    </form>
+
+    <div class="loading-spinner" id="heatmapLoadingSpinner">
+        <i class="fas fa-circle-notch"></i>
+        <p>Generating heatmap...</p>
+    </div>
+
+    {% if result is defined and result %}
+    <div class="results-container" id="heatmapResultsContainer">
+        <div class="results-grid">
+            <div class="image-container">
+                <span class="image-label">Uploaded Image</span>
+                <img id="originalHeatmapImage"
+                    src="{{ url_for('static', filename=upload_path.replace('static/', '')) }}" alt="Original Image">
+            </div>
+            <div class="image-container">
+                <span class="image-label">Waste Heatmap</span>
+                <img id="heatmapImage"
+                    src="{{ url_for('static', filename=result.heatmap_path.replace('static/', '')) }}" alt="Heatmap">
+            </div>
+            <div class="image-container">
+                <span class="image-label">Waste Distribution Graph</span>
+                <img id="distGraphImage"
+                    src="{{ url_for('static', filename=result.dist_graph_path.replace('static/', '')) }}"
+                    alt="Distribution Graph">
+            </div>
+        </div>
+
+        <div class="analysis-container">
+            <div class="analysis-header">
+                <h2 class="analysis-title">Heatmap Analysis Results</h2>
+            </div>
+
+            <div class="food-items-table-container">
+                <h3 class="table-title">Waste Distribution by Area</h3>
+                <table class="food-items-table">
+                    <thead>
+                        <tr>
+                            <th>Area</th>
+                            <th>Waste (kg)</th>
+                            <th>Percentage</th>
+                            <th>X</th>
+                            <th>Y</th>
+                        </tr>
+                    </thead>
+                    <tbody id="wasteAreasTable">
+                        {% for row in result.waste_data %}
+                        <tr>
+                            <td>{{ row.area }}</td>
+                            <td>{{ row.waste_kg|round(1) }}</td>
+                            <td>{{ ((row.waste_kg / result.total_waste) * 100)|round(1) }}%</td>
+                            <!-- <td>{{ row.x }}</td>
+                            <td>{{ row.y }}</td> -->
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- <div class="detail-item notes-item">
+                <div class="detail-label">Distribution Summary:</div>
+                <div class="detail-value" id="distSummary">
+                    {{ result.dist_text|replace('\n', '<br>')|safe }}
+                </div>
+            </div> -->
+        </div>
+
+        <button class="new-analysis-btn" id="newHeatmapAnalysisBtn">Generate New Heatmap</button>
+    </div>
+    {% endif %}
+</div>
+
+
+<script src="{{ url_for('static', filename='js/heatmap.js') }}"></script>
+</body>
+
+</html>

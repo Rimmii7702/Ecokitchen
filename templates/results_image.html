@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_1.css') }}">
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ url_for('index') }}" class="nav-link">Dashboard</a>
+            <a href="{{ url_for('waste') }}" class="nav-link"></a>
+            <a href="{{ url_for('kitchen_heatmap') }}" class="nav-link">Kitchen Heatmap</a>
+        </div>
+    </nav> -->
+    <div class="container">
+        <div class="card">
+            <button class="back-btn" onclick="history.back()">← Back</button>
+            <img src="https://cdn-icons-png.flaticon.com/512/2676/2676046.png" alt="Smart Inventory Logo" class="logo" style="width: 60px; margin-bottom: 15px;">
+            <h1>Inventory Results</h1>
+            {% if error %}
+                <div class="error">{{ error }}</div>
+            {% else %}
+                <div class="result-section">
+                    <h2>Summary</h2>
+                    <p><strong>Image:</strong> {{ result.image }}</p>
+                    <p><strong>Total Items:</strong> {{ result.total_items }}</p>
+                </div>
+                <!-- {% set original_url = url_for('uploads', filename=result.image) %} -->
+                <!-- <img src="{{ original_url }}" alt="Uploaded Image" class="annotated-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"> -->
+               
+                    <h2>Detected Items</h2>
+                    <div class="item-grid">
+                        {% if result.item_counts is mapping %}
+                            {% for item, count in result.item_counts.items() %}
+                                <div class="item-card">
+                                    <span class="item-name">{{ item }}</span>
+                                    <span class="item-count">{{ count }} unit{% if count != 1 %}s{% endif %}</span>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="error">item_counts is not a mapping: {{ result.item_counts }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="result-section">
+                    <h2>Spoilage Status</h2>
+                    <div class="item-grid">
+                        {% if result['items'] is iterable and result['items'] is not string %}
+                            {% for item in result['items'] %}
+                                <div class="item-card {{ item.spoilage_status|lower|replace(' ', '-') }}">
+                                    <span class="item-name">{{ item.ingredient }}</span>
+                                    <span class="item-status">{{ item.spoilage_status }}</span>
+                                    {% if item.days_to_expiry is not none %}
+                                        <span class="item-detail">{{ item.days_to_expiry }} days to expiry</span>
+                                    {% endif %}
+                                    <span class="item-detail">Confidence: {{ item.detection_confidence }}</span>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="error">items is not iterable: {{ result['items'] }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                <a href="{{ url_for('inverntory') }}" class="btn">Scan Another Image</a>
+                <a href="{{ url_for('live_spoilage_status') }}" class="btn">Check Spoilage Status Live</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

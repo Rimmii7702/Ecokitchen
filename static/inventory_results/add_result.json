@@ -1,0 +1,31 @@
+{
+    "video": "add.mp4",
+    "change_log": [
+        {
+            "time_key": 0,
+            "timestamp": "0:00 - 4:59",
+            "added": [
+                "bottle",
+                "bowl",
+                "orange",
+                "person",
+                "refrigerator"
+            ],
+            "removed": [
+                "bottle",
+                "bowl",
+                "orange",
+                "person",
+                "refrigerator"
+            ]
+        }
+    ],
+    "total_added_items": 5,
+    "all_items": [
+        "orange",
+        "person",
+        "bowl",
+        "refrigerator",
+        "bottle"
+    ]
+}

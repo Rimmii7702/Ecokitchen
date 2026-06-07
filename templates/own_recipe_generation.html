@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style_3.css">
+</head>
+<body>
+  <div class="container">
+    <button class="back-btn" onclick="history.back()">← Back</button>
+    <header class="app-header">
+      <h1 class="app-title">Recipe Generator</h1>
+      <p class="app-subtitle">Select ingredients and discover delicious recipes!</p>
+    </header>
+    
+    <div class="card">
+      <h2 class="card-title">Select Your Ingredients</h2>
+      <!-- ingredientSelectors div -->
+      <div id="ingredientSelectors" class="mb-4"></div>
+      
+      <div>
+        <h3 class="form-label">Selected Ingredients:</h3>
+        <div id="selectedIngredients">
+          <p class="empty-message">No ingredients selected yet</p>
+        </div>
+      </div>
+      
+      <button id="getRecipeBtn" class="btn btn-block">Generate Recipe</button>
+    </div>
+    
+    <div class="card">
+      <h2 class="card-title">Your Recipe</h2>
+      <div id="recipeOutput" class="recipe-content">
+        <p class="empty-message">Your recipe will appear here</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let selectedIngredients = [];
+
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch("/ingredients")
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById("ingredientSelectors");
+
+          Object.entries(data).forEach(([category, items]) => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "mb-3";
+
+            const label = document.createElement("label");
+            label.className = "form-label fw-bold";
+            label.textContent = category;
+            wrapper.appendChild(label);
+
+            const select = document.createElement("select");
+            select.className = "form-select";
+            select.innerHTML = `<option disabled selected>Select from ${category}</option>`;
+
+            items.forEach(item => {
+              const option = document.createElement("option");
+              option.value = item;
+              option.textContent = item;
+              select.appendChild(option);
+            });
+
+            select.addEventListener("change", () => {
+              const selected = select.value;
+              if (!selectedIngredients.includes(selected)) {
+                selectedIngredients.push(selected);
+                updateSelectedIngredients();
+              }
+            });
+
+            wrapper.appendChild(select);
+            container.appendChild(wrapper);
+          });
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("ingredientSelectors").innerHTML = 
+            '<p class="error-message">Failed to load ingredients. Please try again later.</p>';
+        });
+
+      function updateSelectedIngredients() {
+        const container = document.getElementById("selectedIngredients");
+        container.innerHTML = "";
+        
+        if (selectedIngredients.length === 0) {
+          container.innerHTML = '<p class="empty-message">No ingredients selected yet</p>';
+          return;
+        }
+        
+        selectedIngredients.forEach((item, index) => {
+          const badge = document.createElement("span");
+          badge.className = "badge";
+          badge.textContent = item;
+
+          const remove = document.createElement("span");
+          remove.innerHTML = "×";
+          remove.className = "remove-icon";
+          remove.onclick = () => {
+            selectedIngredients.splice(index, 1);
+            updateSelectedIngredients();
+          };
+
+          badge.appendChild(remove);
+          container.appendChild(badge);
+        });
+      }
+
+      document.getElementById("getRecipeBtn").addEventListener("click", () => {
+        if (selectedIngredients.length === 0) {
+          alert("Please select at least one ingredient.");
+          return;
+        }
+
+        document.getElementById("recipeOutput").innerHTML = '<p class="loading">Loading your recipe...</p>';
+
+        fetch("/generate-recipe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ingredients: selectedIngredients })
+        })
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("recipeOutput").innerText = data.recipe;
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("recipeOutput").innerHTML = 
+            '<p class="error-message">Failed to fetch recipe. Please try again later.</p>';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

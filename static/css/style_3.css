@@ -1,0 +1,205 @@
+/* Recipe Generator Styles */
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --dark-color: #2d3436;
+    --light-color: #f9f9f9;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .app-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .back-btn {
+    position: absolute;
+    top: 20px;  /* Adjust the distance from the top of the page */
+    left: 20px;  /* Adjust the distance from the left edge */
+    background: transparent;
+    border: none;
+    color: #4ecdc4;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    z-index: 1000; /* Ensure the button appears on top of other elements */
+}
+
+.back-btn:hover {
+    color: #ff6b6b;
+}
+  .app-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .app-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+  }
+  
+  .form-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: white;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .form-select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+  }
+  
+  .form-select:hover {
+    border-color: #ccc;
+  }
+  
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .badge .remove-icon {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+  
+  .badge .remove-icon:hover {
+    color: #ffe0e0;
+  }
+  
+  .badge:hover {
+    background-color: #3dbeb3;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: var(--transition);
+  }
+  
+  .btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  #selectedIngredients {
+    min-height: 50px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+  }
+  
+  #recipeOutput {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    min-height: 200px;
+    white-space: pre-wrap;
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+  }
+  
+  .empty-message {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+      margin: 20px auto;
+    }
+    
+    .app-title {
+      font-size: 2rem;
+    }
+    
+    .card {
+      padding: 20px;
+    }
+  }

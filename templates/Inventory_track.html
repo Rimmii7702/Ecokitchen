@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Inventory Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_1.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <button class="back-btn" onclick="history.back()">← Back</button>
+            <img src="https://cdn-icons-png.flaticon.com/512/5026/5026146.png" alt="Smart Inventory Logo" width="40" class="logo">
+
+            <h1>Food Inventory Scanner</h1>
+            <p>Choose mode to detect food items and check their spoilage status.</p>
+            <div>
+                <button id="static-btn" class="btn">Upload Inventory Image</button>
+                <button id="video-btn" class="btn">Live Camera</button>
+            </div>
+            <form id="upload-form" enctype="multipart/form-data" class="hidden">
+                <div class="file-input-wrapper">
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <label for="image">Choose Image</label>
+                </div>
+                <button type="submit" class="btn">Scan Inventory</button>
+                <div id="loading" class="loading hidden">Processing...</div>
+                <div id="error" class="error hidden"></div>
+            </form>
+            <form id="video-form" enctype="multipart/form-data" class="hidden">
+                <div class="file-input-wrapper">
+                    <input type="file" id="video" name="video" accept="video/*" required>
+                    <label for="video">Upload video</label>
+                </div>
+                <button type="submit" class="btn">Process Video</button>
+                <div id="video-loading" class="loading hidden">Processing...</div>
+                <div id="video-error" class="error hidden"></div>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main_1.js') }}"></script>
+</body>
+</html>

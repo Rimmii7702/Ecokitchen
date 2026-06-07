@@ -1,0 +1,263 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3436;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #2d3436;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;  /* Adjust the distance from the top of the page */
+    left: 20px;  /* Adjust the distance from the left edge */
+    background: transparent;
+    border: none;
+    color: #4ecdc4;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    z-index: 1000; /* Ensure the button appears on top of other elements */
+}
+
+.back-btn:hover {
+    color: #ff6b6b;
+}
+
+
+/* Button styling */
+.btn {
+    background: #4ecdc4;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ff6b6b;
+}
+
+/* Form and file input styling */
+.hidden {
+    display: none;
+}
+
+.file-input-wrapper {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.file-input-wrapper input[type="file"] {
+    display: none;
+}
+
+.file-input-wrapper label {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #4ecdc4;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.file-input-wrapper label:hover {
+    background: #45b7aa;
+}
+
+/* Loading and error styling */
+.loading {
+    color: #4ecdc4;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.error {
+    color: #ff6b6b;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Results styling for results_image.html and results_video.html */
+.result-section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.annotated-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    max-height: 50vh; /* Limit height to avoid scrolling */
+    overflow-y: hidden; /* Prevent vertical scroll */
+}
+
+.item-card {
+    background: #f5f7fa;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-left: 4px solid #4ecdc4;
+    text-align: center;
+}
+
+.item-card.fresh { border-left-color: #00ff00; }
+.item-card.soon-to-be-expire { border-left-color: #ffa500; }
+.item-card.expired { border-left-color: #ff6b6b; }
+.item-card.unknown { border-left-color: #ffffff; }
+
+.item-name {
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.item-count, .item-status, .item-detail {
+    font-size: 0.9rem;
+    color: #2d3436;
+}
+
+.item-status {
+    font-weight: 500;
+}
+
+.video-container {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.video-container video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card, .changes-card {
+    background: #f5f7fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.summary-card h3, .changes-card h3 {
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+}
+
+.summary-card p, .changes-card p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.changes-card ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+.changes-card li {
+    margin: 0.5rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn, .file-input-wrapper label {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .item-grid {
+        grid-template-columns: 1fr; /* Stack vertically on small screens */
+    }
+
+    .video-container video, .summary-card, .changes-card {
+        width: 100%;
+    }
+}

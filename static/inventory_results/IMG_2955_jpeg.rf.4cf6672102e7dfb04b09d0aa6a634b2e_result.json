@@ -1,0 +1,223 @@
+{
+    "image": "IMG_2955_jpeg.rf.4cf6672102e7dfb04b09d0aa6a634b2e.jpg",
+    "items": [
+        {
+            "ingredient": "Wine",
+            "bounding_box": [
+                4482,
+                2125,
+                4965,
+                2671
+            ],
+            "detection_confidence": 1.0,
+            "spoilage_status": "Soon-to-be-expire",
+            "days_to_expiry": 1
+        },
+        {
+            "ingredient": "Spaghetti-Sauce",
+            "bounding_box": [
+                1936,
+                805,
+                2633,
+                1451
+            ],
+            "detection_confidence": 0.99,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 7
+        },
+        {
+            "ingredient": "Spaghetti-Sauce",
+            "bounding_box": [
+                2247,
+                1399,
+                2813,
+                2369
+            ],
+            "detection_confidence": 0.99,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 7
+        },
+        {
+            "ingredient": "Noodle",
+            "bounding_box": [
+                1423,
+                1191,
+                2069,
+                2579
+            ],
+            "detection_confidence": 0.98,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 20
+        },
+        {
+            "ingredient": "Wine",
+            "bounding_box": [
+                3888,
+                1696,
+                4404,
+                2540
+            ],
+            "detection_confidence": 0.97,
+            "spoilage_status": "Soon-to-be-expire",
+            "days_to_expiry": 1
+        },
+        {
+            "ingredient": "Rice",
+            "bounding_box": [
+                2077,
+                2840,
+                2577,
+                3703
+            ],
+            "detection_confidence": 0.96,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 12
+        },
+        {
+            "ingredient": "Pasta-Noodles-Spaghetti",
+            "bounding_box": [
+                2682,
+                1160,
+                3565,
+                2083
+            ],
+            "detection_confidence": 0.96,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 22
+        },
+        {
+            "ingredient": "Pasta-Elbow",
+            "bounding_box": [
+                3533,
+                371,
+                4384,
+                1260
+            ],
+            "detection_confidence": 0.96,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 7
+        },
+        {
+            "ingredient": "Honey",
+            "bounding_box": [
+                1786,
+                2,
+                2493,
+                624
+            ],
+            "detection_confidence": 0.95,
+            "spoilage_status": "Expired",
+            "days_to_expiry": -5
+        },
+        {
+            "ingredient": "Instant-Noodle",
+            "bounding_box": [
+                182,
+                1810,
+                1077,
+                2806
+            ],
+            "detection_confidence": 0.93,
+            "spoilage_status": "Expired",
+            "days_to_expiry": -2
+        },
+        {
+            "ingredient": "Wine",
+            "bounding_box": [
+                4099,
+                2146,
+                4534,
+                2747
+            ],
+            "detection_confidence": 0.93,
+            "spoilage_status": "Soon-to-be-expire",
+            "days_to_expiry": 1
+        },
+        {
+            "ingredient": "Wine",
+            "bounding_box": [
+                4396,
+                1689,
+                4881,
+                2684
+            ],
+            "detection_confidence": 0.92,
+            "spoilage_status": "Soon-to-be-expire",
+            "days_to_expiry": 1
+        },
+        {
+            "ingredient": "Water",
+            "bounding_box": [
+                3516,
+                1956,
+                3905,
+                2442
+            ],
+            "detection_confidence": 0.91,
+            "spoilage_status": "Unknown",
+            "days_to_expiry": null
+        },
+        {
+            "ingredient": "Pasta-Noodles-Spaghetti",
+            "bounding_box": [
+                2935,
+                676,
+                3850,
+                1578
+            ],
+            "detection_confidence": 0.9,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 22
+        },
+        {
+            "ingredient": "Bread-Crumbs",
+            "bounding_box": [
+                2,
+                4,
+                950,
+                908
+            ],
+            "detection_confidence": 0.89,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 7
+        },
+        {
+            "ingredient": "Green-Chili",
+            "bounding_box": [
+                809,
+                0,
+                1892,
+                792
+            ],
+            "detection_confidence": 0.82,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 24
+        },
+        {
+            "ingredient": "Rice",
+            "bounding_box": [
+                608,
+                3348,
+                1419,
+                3888
+            ],
+            "detection_confidence": 0.72,
+            "spoilage_status": "Fresh",
+            "days_to_expiry": 12
+        }
+    ],
+    "item_counts": {
+        "Wine": 4,
+        "Spaghetti-Sauce": 2,
+        "Noodle": 1,
+        "Rice": 2,
+        "Pasta-Noodles-Spaghetti": 2,
+        "Pasta-Elbow": 1,
+        "Honey": 1,
+        "Instant-Noodle": 1,
+        "Water": 1,
+        "Bread-Crumbs": 1,
+        "Green-Chili": 1
+    },
+    "total_items": 17
+}
